@@ -1,0 +1,25 @@
+.cell-content {
+    transition: all 0.2s ease;
+}
+
+.constraint-marker {
+    pointer-events: none;
+}
+
+.grid-cell {
+    border: 1px solid #e5e7eb;
+    background: white;
+    position: relative;
+}
+
+.grid-cell:hover {
+    background: #f9fafb;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1px;
+    background: #e5e7eb;
+    padding: 1px;
+    border-radius: 0.5rem;
+} 

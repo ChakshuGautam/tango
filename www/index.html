@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tango Puzzle Solver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+    <div class="max-w-2xl mx-auto">
+        <div class="border bg-card text-card-foreground shadow-sm p-4 rounded-xl">
+            <!-- Header Section -->
+            <div class="flex items-center mb-4 border-b pb-2 gap-2">
+                <span class="font-semibold">Tango Solver</span>
+                <div class="ml-auto flex items-center gap-2">
+                    <button id="solveBtn" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                        Solve
+                    </button>
+                    <button id="clearBtn" class="border px-4 py-2 rounded-md hover:bg-gray-50">
+                        Clear
+                    </button>
+                </div>
+            </div>
+
+            <!-- Puzzle Grid Container -->
+            <div id="gridContainer" class="grid gap-px bg-gray-200 rounded-lg p-px mt-4"></div>
+
+            <!-- Controls -->
+            <div class="flex gap-2 mt-4 justify-center items-center">
+                <select id="puzzleSelect" class="border rounded-lg p-2">
+                    <!-- Options populated by JS -->
+                </select>
+                <label class="flex items-center ml-4 gap-2">
+                    <input id="showErrors" type="checkbox" checked>
+                    <span>Show Errors</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>

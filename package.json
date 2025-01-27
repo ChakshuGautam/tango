@@ -1,0 +1,36 @@
+{
+  "name": "tango",
+  "version": "1.0.0",
+  "description": "The tango game from LinkedIn",
+  "main": "www/index.js",
+  "scripts": {
+    "test": "node www/game.test.js",
+    "start": "webpack serve",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ChakshuGautam/tango.git"
+  },
+  "keywords": [
+    "tango",
+    "linkedin"
+  ],
+  "author": "Chakshu Gautam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChakshuGautam/tango/issues"
+  },
+  "homepage": "https://github.com/ChakshuGautam/tango#readme",
+  "dependencies": {
+    "puppeteer": "^24.1.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
