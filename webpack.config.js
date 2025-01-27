@@ -27,7 +27,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "www/index.html", to: "index.html" },
-                { from: "www/games", to: "games" },
+                { from: "www/games/*.json", to: "games/[name][ext]" },
                 { from: "www/moon.png", to: "moon.png" },
             ],
         }),
