@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tango Puzzle Solver</title>
+    <title>Tango</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 p-4">
     <div class="max-w-2xl mx-auto">
+        <!-- Title Section -->
+        <h1 class="text-3xl font-bold text-center mb-6">Tango</h1>
+
         <div class="border bg-card text-card-foreground shadow-sm p-4 rounded-xl">
-            <!-- Header Section -->
+            <!-- Controls Section -->
             <div class="flex items-center mb-4 border-b pb-2 gap-2">
-                <span class="font-semibold">Tango Solver</span>
-                <div class="ml-auto flex items-center gap-2">
+                <div class="flex items-center gap-2">
                     <button id="solveBtn" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
                         Solve
                     </button>
@@ -22,6 +24,7 @@
                         Clear
                     </button>
                 </div>
+                <div id="timer" class="ml-auto font-mono text-xl">00:00</div>
             </div>
 
             <!-- Puzzle Grid Container -->
@@ -36,6 +39,19 @@
                     <input id="showErrors" type="checkbox" checked>
                     <span>Show Errors</span>
                 </label>
+            </div>
+
+            <!-- Game Rules -->
+            <div class="mt-8 text-sm text-gray-600 space-y-2">
+                <h3 class="font-semibold text-gray-800 mb-2">How to Play:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Fill each cell with either a sun or moon</li>
+                    <li>No more than 2 of the same symbol may be next to each other</li>
+                    <li>Each row and column must have an equal number of suns and moons</li>
+                    <li>Cells separated by = must be the same type</li>
+                    <li>Cells separated by × must be opposite types</li>
+                    <li>Each puzzle has one right answer and can be solved via deduction (no guessing needed)</li>
+                </ul>
             </div>
         </div>
     </div>

@@ -4,7 +4,9 @@
   "description": "The tango game from LinkedIn",
   "main": "www/index.js",
   "scripts": {
-    "test": "node www/game.test.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "start": "webpack serve",
     "build": "webpack --mode production"
   },
@@ -26,8 +28,13 @@
     "puppeteer": "^24.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.x.x",
+    "@babel/preset-env": "^7.x.x",
+    "babel-jest": "^29.x.x",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.x.x",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
